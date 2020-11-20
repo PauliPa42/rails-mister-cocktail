@@ -54,3 +54,6 @@ gem 'simple_form'
 
 # key protection
 gem 'dotenv-rails', groups: [:development, :test]
+
+# cloudinary
+gem 'cloudinary', '~> 1.16.0'
