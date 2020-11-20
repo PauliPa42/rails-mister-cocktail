@@ -5,17 +5,20 @@
 }
 
 .picture {
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1583898350903-99fa829dad3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80);
-  background-size: cover;
-  background-position: center;
   width: 40%;
   height: 70vh;
   margin-right: 25px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 200;
     text-align: center;
+    margin: 0 auto;
     color: #F7E7CF;
   }
 }

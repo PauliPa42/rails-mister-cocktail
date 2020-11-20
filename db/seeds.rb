@@ -32,10 +32,29 @@ puts 'Done!'
 # COCKTAILS
 puts 'Creating new cocktails...'
 
-mojito = Cocktail.create!(name: "Mojito")
-bloody_mary = Cocktail.create!(name: "Bloody Mary")
-sex_on_the_beach = Cocktail.create!(name: "Sex on the Beach")
-martini = Cocktail.create!(name: "Martini")
+# mojito
+mojito_file = URI.open("https://images.unsplash.com/photo-1455621481073-d5bc1c40e3cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=883&q=80")
+mojito = Cocktail.new(name: "Mojito")
+mojito.photo.attach(io: mojito_file, filename: 'mojito.jpg', content_type: 'image/jpg')
+mojito.save!
+
+# bloody mary
+bloody_mary_file = URI.open("https://images.unsplash.com/photo-1541546339599-ecdbfcf77378?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=734&q=80")
+bloody_mary = Cocktail.new(name: "Bloody Mary")
+bloody_mary.photo.attach(io: bloody_mary_file, filename: 'bloody_mary.jpg', content_type: 'image/jpg')
+bloody_mary.save!
+
+# sex on the beach
+sex_on_the_beach_file = URI.open("https://noseychef.com/wp-content/uploads/2018/07/IMG_3744.jpg")
+sex_on_the_beach = Cocktail.new(name: "Sex on the Beach")
+sex_on_the_beach.photo.attach(io: sex_on_the_beach_file, filename: 'sex_on_the_beach.jpg', content_type: 'image/jpg')
+sex_on_the_beach.save!
+
+# martini
+martini_file = URI.open("https://images.unsplash.com/photo-1575023782549-62ca0d244b39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80")
+martini = Cocktail.new(name: "Martini")
+martini.photo.attach(io: martini_file, filename: 'martini.jpg', content_type: 'image/jpg')
+martini.save!
 
 puts 'Done!'
 
