@@ -1,0 +1,36 @@
+.btn-ghost {
+  color: #F7E7CF;
+  border: 0.5px solid #F7E7CF;
+  padding: 8px 24px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: 0.5s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  &:hover {
+    background: rgba(247, 231, 207, 36);
+    color: #3D2A13;
+    border: #3D2A13;
+  }
+}
+
+.btn-ghost-dark {
+  color: #3D2A13;
+  border: 0.5px solid #3D2A13;
+  padding: 8px 24px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: 0.5s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  background: rgba(247, 231, 207, 36);
+  &:hover {
+    background-color: #3D2A13;
+    color: #F7E7CF;
+    border: #F7E7CF;
+  }
+}
+
+#new-cocktail {
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+<div class="banner-small" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1125&q=80);">
+  <div class="container">
+    <h1>Create a New Cocktail</h1>
+  </div>
+</div>
+
+<div class="form">
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.submit 'Add Cocktail', class: "btn-ghost-dark" %>
+  <% end %>
+
+</div>
